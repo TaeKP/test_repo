@@ -29,3 +29,9 @@ FC_KSRY_j <- join(list(FC2019, FC2021, FC2023),
                   sessionlabels=c("2019","2021","2023"))
 
 summary(FC_KSRY_j)
+
+# Check and correct the intervals
+attr(FC_KSRY_j, "intervals")
+
+# Data Summary
+summary(FC_KSRY_j, terse = TRUE)
