@@ -21,3 +21,11 @@ plot(FC2019, rad=50, track=TRUE)
 plot(FC2021, rad=50, track=TRUE)
 plot(FC2023, rad=50, track=TRUE)
 par(mfrow=c(1,1))
+
+# Set interval
+## Differences in number of day in camOp table and capture history in each session
+
+FC_KSRY_j <- join(list(FC2019, FC2021, FC2023), 
+                  sessionlabels=c("2019","2021","2023"))
+
+summary(FC_KSRY_j)
